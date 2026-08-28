@@ -6,8 +6,8 @@
   --paper: #f5f1e8;
   --surface: #fbf9f4;
   --line: #d8d3c8;
-  --accent: #632ca6;
-  --accent-dark: #4c1d82;
+  --accent: #e4002b;
+  --accent-dark: #b00020;
   --sage: #788274;
   --blue: #5e7180;
   --bg: var(--paper);
@@ -315,16 +315,16 @@ button:active:not(:focus-visible),
 }
 
 .brand-lockup {
-  --dd-h: 36px;
+  --brand-h: 18px;
   display: inline-flex;
-  align-items: flex-start;
-  gap: 0.4rem;
+  align-items: center;
+  gap: 0.45rem;
   min-width: 0;
   color: var(--ink);
   text-decoration: none;
 }
 
-.brand-dd,
+.brand-f5,
 .brand-sxai {
   display: block;
   width: auto;
@@ -334,14 +334,14 @@ button:active:not(:focus-visible),
   object-fit: contain;
 }
 
-.brand-dd {
-  height: var(--dd-h);
+.brand-f5 {
+  height: var(--brand-h);
 }
 
 .brand-sxai {
-  height: calc(var(--dd-h) * 0.58);
-  max-width: calc(var(--dd-h) * 4.8);
-  margin-top: calc(var(--dd-h) * 0.2);
+  height: calc(var(--brand-h) * 0.78);
+  max-width: calc(var(--brand-h) * 7.2);
+  margin-top: 0;
   filter: brightness(0);
 }
 
@@ -350,19 +350,19 @@ button:active:not(:focus-visible),
 }
 
 .brand-lockup-sm {
-  --dd-h: 24px;
+  --brand-h: 17px;
 }
 
 .brand-lockup-md,
 .brand-lockup-lg {
-  --dd-h: 32px;
+  --brand-h: 18px;
 }
 
 .brand-times {
   align-self: center;
   margin-top: 0;
   color: var(--muted);
-  font-size: calc(var(--dd-h) * 0.28);
+  font-size: calc(var(--brand-h) * 0.72);
   font-weight: 300;
   line-height: 1;
 }
@@ -909,7 +909,7 @@ button:active:not(:focus-visible),
 
 .story-transcript-ui {
   background:
-    linear-gradient(155deg, rgba(99, 44, 166, 0.08), transparent 55%),
+    linear-gradient(155deg, rgba(228, 0, 43, 0.08), transparent 55%),
     var(--surface);
 }
 
@@ -950,7 +950,7 @@ button:active:not(:focus-visible),
 }
 
 .story-deck-ui {
-  background: #1b1820;
+  background: #20181a;
 }
 
 .story-deck-ui .story-ui-bar {
@@ -975,12 +975,12 @@ button:active:not(:focus-visible),
   border-radius: 0.38rem;
   color: #fff;
   background:
-    radial-gradient(circle at 90% 12%, rgba(99, 44, 166, 0.8), transparent 34%),
-    #29242f;
+    radial-gradient(circle at 90% 12%, rgba(228, 0, 43, 0.74), transparent 34%),
+    #2d2224;
 }
 
 .story-mini-slide small {
-  color: #c6a7ea;
+  color: #ffb3c0;
   font-family: var(--mono);
   font-size: 0.45rem;
   font-weight: 700;
@@ -1001,8 +1001,8 @@ button:active:not(:focus-visible),
   width: fit-content;
   padding: 0.19rem 0.34rem;
   border-radius: 0.2rem;
-  color: #1b1820;
-  background: #d9b8ff;
+  color: #20181a;
+  background: #ffc2cd;
   font-size: 0.48rem;
   font-weight: 700;
 }
@@ -1013,7 +1013,7 @@ button:active:not(:focus-visible),
 
 .story-email-ui {
   background:
-    linear-gradient(145deg, rgba(99, 44, 166, 0.06), transparent 58%),
+    linear-gradient(145deg, rgba(228, 0, 43, 0.06), transparent 58%),
     var(--surface);
 }
 
@@ -1191,7 +1191,7 @@ button:active:not(:focus-visible),
 
 .story-research-ui {
   background:
-    radial-gradient(circle at 50% 60%, rgba(99, 44, 166, 0.11), transparent 48%),
+    radial-gradient(circle at 50% 60%, rgba(228, 0, 43, 0.11), transparent 48%),
     var(--surface);
 }
 
@@ -1275,7 +1275,7 @@ button:active:not(:focus-visible),
 }
 
 .story-outreach-ui {
-  background: #1b1820;
+  background: #20181a;
 }
 
 .story-outreach-ui .story-ui-bar {
@@ -1311,8 +1311,8 @@ button:active:not(:focus-visible),
   height: 1.05rem;
   place-items: center;
   border-radius: 50%;
-  color: #1b1820;
-  background: #d9b8ff;
+  color: #20181a;
+  background: #ffc2cd;
   font-size: 0.5rem;
   font-weight: 800;
 }

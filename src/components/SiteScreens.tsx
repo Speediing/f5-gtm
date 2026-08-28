@@ -135,26 +135,21 @@ function GranolaScreen({ account }: { account: string }) {
       <p className="site-time">Still on the call · Granola in</p>
       <ul>
         <li>
-          <span>14:12</span> Start with APM + Logs in one team. Not a product
-          tour.
+          <span>14:12</span> Current application workflow is under review.
         </li>
         <li>
-          <span>14:18</span> Security: SSO and an audit trail before any extra
-          products.
+          <span>14:18</span> Application, security, and platform owners are in
+          the room.
         </li>
         <li>
-          <span>14:21</span> Soft yes on a Bits AI trial if those two are named.
+          <span>14:21</span> Map the existing F5 environment before proposing a
+          change.
         </li>
         <li>
-          <span>14:24</span> Cost mentioned once. RUM not in the room.
+          <span>14:24</span> Keep the next step to one workflow and one owner.
         </li>
         <li>
-          <span>14:28</span> Your contact will take a Tuesday with a security
-          co-owner.
-        </li>
-        <li>
-          <span>14:31</span> Use cases named live on the demo. Sev-2 story,
-          one team, SSO as the gate.
+          <span>14:28</span> Open questions need approved source material.
         </li>
       </ul>
     </div>
@@ -221,16 +216,16 @@ function GongScreen({ account }: { account: string }) {
       <header>
         <strong>Gong</strong>
         <span>
-          {account} · first meeting · 32 min
+          {account} · customer meeting
         </span>
       </header>
       <div className="gong-recap">
         <h4>Call recap</h4>
         <ul>
-          <li>They have APM + Logs</li>
-          <li>Security lead in the room</li>
-          <li>Cost mentioned once</li>
-          <li>No one who can sign was on the call</li>
+          <li>Current application workflow reviewed</li>
+          <li>Security and platform owners involved</li>
+          <li>Existing F5 environment needs mapping</li>
+          <li>Open questions need sourced answers</li>
         </ul>
       </div>
     </div>
@@ -251,51 +246,51 @@ function SfdcAccountScreen({ account }: { account: string }) {
       </div>
       <dl className="sfdc-fields">
         <div>
-          <dt>Has now</dt>
-          <dd>APM + Logs</dd>
+          <dt>Current focus</dt>
+          <dd>Application workflow</dd>
         </div>
         <div>
-          <dt>Security lead</dt>
-          <dd>In first meeting</dd>
+          <dt>Application owner</dt>
+          <dd>Needs confirmation</dd>
         </div>
         <div>
-          <dt>Cost</dt>
-          <dd>Mentioned once</dd>
+          <dt>Security owner</dt>
+          <dd>Part of the review</dd>
         </div>
         <div>
-          <dt>Who can sign</dt>
-          <dd>Not confirmed</dd>
+          <dt>Next step</dt>
+          <dd>Map the current environment</dd>
         </div>
       </dl>
       <table className="sfdc-related">
-        <caption>Next 90 days</caption>
+        <caption>Workflow review</caption>
         <thead>
           <tr>
-            <th>Product</th>
+            <th>Workstream</th>
             <th>Owner</th>
-            <th>Window</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Bits AI</td>
-            <td>Platform eng manager</td>
-            <td>Day 15 to 45</td>
+            <td>Application path</td>
+            <td>Platform owner</td>
+            <td>Map current state</td>
           </tr>
           <tr>
-            <td>Cloud SIEM</td>
+            <td>Security review</td>
             <td>Security lead</td>
-            <td>Day 15 to 45</td>
+            <td>Open questions</td>
           </tr>
           <tr>
-            <td>Cost</td>
-            <td>FinOps alias</td>
-            <td>Day 45 to 90</td>
+            <td>Source material</td>
+            <td>Account team</td>
+            <td>Collect approved docs</td>
           </tr>
           <tr>
-            <td>RUM</td>
-            <td>Frontend guild</td>
-            <td>Day 45 to 90</td>
+            <td>Follow-up</td>
+            <td>Seller</td>
+            <td>Draft for review</td>
           </tr>
         </tbody>
       </table>
@@ -319,30 +314,28 @@ function SfdcOppScreen({
       </header>
       <div className="sfdc-title">
         <p>Opportunity</p>
-        <h3>
-          {account} · $1.4M
-        </h3>
+        <h3>{account} · workflow review</h3>
       </div>
       <dl className="sfdc-fields">
         <div>
-          <dt>Stage</dt>
-          <dd>4 · this quarter</dd>
+          <dt>Status</dt>
+          <dd>Discovery in progress</dd>
         </div>
         <div className={highlight ? "gap" : undefined}>
-          <dt>Signer meeting</dt>
-          <dd>None on calendar</dd>
+          <dt>Application owner</dt>
+          <dd>Needs confirmation</dd>
         </div>
         <div className={highlight ? "gap" : undefined}>
-          <dt>Legal</dt>
-          <dd>Slow · no dated path</dd>
+          <dt>Security review</dt>
+          <dd>Open questions</dd>
         </div>
         <div className={highlight ? "gap" : undefined}>
-          <dt>Inside contact</dt>
-          <dd>Likes us · weak map</dd>
+          <dt>Current contact</dt>
+          <dd>Account map incomplete</dd>
         </div>
         <div className={highlight ? "gap" : undefined}>
-          <dt>Cloud SIEM</dt>
-          <dd>Not in the story</dd>
+          <dt>Next action</dt>
+          <dd>Prepare sourced follow-up</dd>
         </div>
       </dl>
     </div>
@@ -360,22 +353,22 @@ function SheetsScreen({
   const rows = table
     ? table.rows
     : [
-        [account, "Inside contact", "Signer TBD", "APM + Logs", "Tue SIEM"],
-        ["Globex", "VP Eng", "CISO", "APM + Logs", "First meeting"],
-        ["Initech", "SRE lead", "CTO", "APM + Logs", "Bits AI"],
-        ["Umbrella", "Sec eng", "CISO", "APM + Logs", "Open source drill"],
-        ["Hooli", "Platform", "Signer TBD", "APM + Logs", "Cost later"],
+        [account, "Current contact", "App owner", "Public update", "Review"],
+        ["Account 02", "New contact", "Security owner", "Open role", "Research"],
+        ["Account 03", "Current contact", "Platform owner", "Company news", "Draft"],
+        ["Account 04", "New contact", "App owner", "Technical post", "Research"],
+        ["Account 05", "Current contact", "Owner unknown", "Account note", "Review"],
       ];
   const cols = table
     ? table.columns
-    : ["Account", "Inside contact", "Who can sign", "Start with", "Next"];
+    : ["Account", "Contact", "Possible owner", "Signal", "Next"];
 
   return (
     <div className="site site-sheets">
       <header>
         <span className="sheets-mark">Sheets</span>
         <strong>
-          {table ? `${account} next 90 days` : "5 accounts x 5 prospects"}
+          {table ? `${account} account review` : "Target account review"}
         </strong>
       </header>
       <table>
@@ -421,7 +414,7 @@ function GmailScreen({
       </p>
       <p>
         <span>Subject</span>
-        {artifact?.subject || `${account} / Datadog`}
+        {artifact?.subject || `${account} / F5`}
       </p>
       <div>{artifact?.body || "Draft parked here until you tap Send?"}</div>
     </div>
@@ -472,7 +465,7 @@ function GdocScreen({
           {forecast
             ? `${account} forecast`
             : talks
-              ? "Bits AI talk tracks"
+              ? "Customer workflow talk tracks"
               : packet
                 ? packet.title
                 : onePager?.title || `${account} brief`}
@@ -515,25 +508,23 @@ function ResearchScreen({ account }: { account: string }) {
     <div className="site site-research">
       <header>
         <strong>{account}.com</strong>
-        <span>Public · last 30 days</span>
+        <span>Public sources</span>
       </header>
-      <p className="site-time">Researching the account · not a sequence</p>
+      <p className="site-time">Researching the account, not running a sequence</p>
       <ul>
         <li>
-          <span>Status</span> Sev-2, 14 days ago. 47 minutes to name the failing
-          service. Postmortem still says they jumped three tools.
+          <span>Company</span> A public technical update may affect an
+          application workflow.
         </li>
         <li>
-          <span>Careers</span> Staff SRE JD: experience stitching APM and logs
-          across teams. Posted this month.
+          <span>Careers</span> An open role may point to the team that owns the
+          work.
         </li>
         <li>
-          <span>Blog</span> We outgrew homegrown dashboards. No named
-          replacement.
+          <span>Account</span> Check recent conversations before writing.
         </li>
         <li>
-          <span>Org</span> VP Eng owns time-to-fix. Platform director sits on
-          that stitch.
+          <span>Owner</span> Confirm who runs the affected workflow.
         </li>
       </ul>
     </div>
@@ -557,7 +548,7 @@ function LinkedInScreen({
       </header>
       <p>
         <span>To</span>
-        {artifact?.to || `${account} VP Eng`}
+        {artifact?.to || `${account} application lead`}
         {artifact?.role ? ` · ${artifact.role}` : ""}
       </p>
       <div>{artifact?.body || "InMail parked here until you tap Send."}</div>

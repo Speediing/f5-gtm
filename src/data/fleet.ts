@@ -21,16 +21,16 @@ export const FLEET: FleetBot[] = [
   },
   {
     id: "inbox",
-    name: "Inbox agent",
-    blurb: "Watches procurement. Finds answers overnight before the rep opens Gmail.",
+    name: "Agent 01",
+    blurb: "Watches for customer questions and prepares sourced answers.",
     jobId: "legal-redlines",
-    color: "#FF375F",
+    color: "#E4002B",
   },
   {
     id: "cross-sell",
-    name: "Outbound agent",
-    blurb: "Watches target accounts. Builds the 3-why and queues personalized drafts.",
+    name: "Agent 02",
+    blurb: "Checks target accounts and prepares researched drafts for review.",
     jobId: "attach-engine",
-    color: "#FF9500",
+    color: "#B00020",
   },
 ];

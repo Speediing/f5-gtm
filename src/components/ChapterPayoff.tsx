@@ -11,7 +11,7 @@ function OutboundPack({
 
   return (
     <div className="leave leave-out-phone">
-      <div className="out-phone" aria-label="Sales Outbound approval chat">
+      <div className="out-phone" aria-label="Agent 04 approval chat">
         <div className="out-phone-notch" aria-hidden />
         <header className="out-phone-header">
           <span className="out-phone-back" aria-hidden>
@@ -21,7 +21,7 @@ function OutboundPack({
             ✦
           </span>
           <p>
-            <strong>Sales Outbound</strong>
+            <strong>Agent 04</strong>
             <small>{artifact.account} · drafts ready</small>
           </p>
           <span className="out-phone-desktop" aria-hidden>
@@ -31,21 +31,21 @@ function OutboundPack({
 
         <div className="out-phone-thread">
           <article className="out-email-card">
-            <p className="out-email-label">Draft email · 1 of 10</p>
+            <p className="out-email-label">Draft email · reviewed</p>
             <p className="out-email-subject">
-              Subject · {artifact.account}&apos;s last Sev-2
+              Subject · A short note on {artifact.account}&apos;s application workflow
             </p>
             <div className="out-email-copy">
               <p>Hi {firstName},</p>
               <p>
-                Your status page and open Staff SRE role point to the same
-                thing: on-call still stitches APM and logs to name a Sev-2.
+                I saw the public technical update and checked it against the
+                current account context.
               </p>
               <p>
-                I put together the 90-second version for your platform team.
-                Worth fifteen minutes next week?
+                I put together a short note on the application workflow around
+                it. Worth comparing notes with the right owner?
               </p>
-              <p>Sam</p>
+              <p>F5 account team</p>
             </div>
             <footer>
               <span>Send email</span>
@@ -54,16 +54,16 @@ function OutboundPack({
           </article>
 
           <p className="out-message is-you">
-            Send the top 10 emails. They look good.
+            Send the reviewed draft. It looks good.
           </p>
           <p className="out-message is-bot">
-            Top 10 sending. The rest stay queued.
+            Reviewed draft sending. The rest stay queued.
           </p>
         </div>
 
         <footer className="out-phone-composer">
           <span aria-hidden>+</span>
-          <p>Message Sales Outbound</p>
+          <p>Message Agent 04</p>
           <span aria-hidden>◉</span>
         </footer>
       </div>
@@ -156,10 +156,10 @@ function BetterAnswer({
           <p className="leave-kicker">Say this</p>
           <p className="leave-win">{artifact.betterAnswer}</p>
           <p className="leave-incident" aria-hidden>
-            <span>Prometheus</span>
-            <span>Grafana</span>
-            <span>Log pile</span>
-            <b>APM + Logs</b>
+            <span>Application</span>
+            <span>Security</span>
+            <span>Platform</span>
+            <b>F5 workflow</b>
           </p>
         </section>
       </div>

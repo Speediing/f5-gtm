@@ -1,10 +1,7 @@
-# Grok Bot for Datadog GTM
+# Grok Bot for F5 sales
 
-Passworded site. Grok Bot from SpaceXAI, for Datadog GTM.
-
-## What it is
-
-Three GTM jobs on one page. Each job has a short problem statement, an interactive Grok Bot demo, and the matching Krista Letz clips under that demo. Below that: a light index of the clips and the public Grok Bot quote wall.
+Password-protected F5 customer leave-behind built from the customer GTM
+template.
 
 ## Run locally
 
@@ -14,18 +11,20 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). Default password is `land2expand` (override with `SITE_PASSWORD`).
+Open [http://localhost:3000](http://localhost:3000). The default password is
+`land2expand`. Set `SITE_PASSWORD` to override it.
 
-## Krista clips
-
-Download into `private/media/krista-clips/` from the GitHub release (served only through the passworded `/api/media/...` route):
+## Checks
 
 ```bash
-gh release download krista-gtm-clips-720p-2026-08-26 \
-  --repo Speediing/grok-bot-quotes \
-  --dir private/media/krista-clips
+npm run lint
+npm run build
 ```
+
+The F5 wordmark loads from F5's official asset host:
+`https://www.f5.com/content/dam/f5-com/global-assets/images/f5-logo.svg`.
 
 ## Deploy
 
-Preview only under the `jasonwiker` Vercel team, project name `datadog-cro`. Set `SITE_PASSWORD=land2expand`. Do not promote to a public production domain until Jason says so.
+Deploy under the `jasonwiker` Vercel team with `SITE_PASSWORD=land2expand`.
+The production alias is `f5-grokbot.vercel.app`.
