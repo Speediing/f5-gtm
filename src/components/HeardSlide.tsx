@@ -1,6 +1,7 @@
 import type { SlideCard } from "@/data/types";
 
 export function HeardSlide({
+  slides,
   size = "lg",
 }: {
   slides: SlideCard[];
