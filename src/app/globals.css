@@ -1455,17 +1455,15 @@ button:active:not(:focus-visible),
 .heard-slide {
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
   min-height: 0;
   overflow: hidden;
   aspect-ratio: 1024 / 676;
-  background: #0a0a0a;
-}
-
-.heard-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 90% 8%, rgba(228, 0, 43, 0.1), transparent 32%),
+    var(--surface);
 }
 
 .heard-bar {
@@ -1483,6 +1481,7 @@ button:active:not(:focus-visible),
 }
 
 .heard-main {
+  flex: 1;
   padding: 1rem 1.5rem 0.6rem;
 }
 
@@ -1509,6 +1508,11 @@ button:active:not(:focus-visible),
   font-weight: 450;
   letter-spacing: -0.03em;
   line-height: 1.4;
+}
+
+.heard-quote strong {
+  color: var(--accent-dark);
+  font-weight: 700;
 }
 
 .heard-map {
